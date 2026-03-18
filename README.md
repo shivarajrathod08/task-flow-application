@@ -268,18 +268,6 @@ TaskFlowAI/
 
 ---
 
-## Output
-<img width="1812" height="1018" alt="image" src="https://github.com/user-attachments/assets/c9bb802a-3973-44ce-9a44-f641dd5ebb17" />
-
-<img width="1814" height="1014" alt="Screenshot 2026-03-18 144756" src="https://github.com/user-attachments/assets/a5784d83-c9e0-4e76-be95-3364db4d2828" />
-
-<img width="1898" height="1018" alt="Screenshot 2026-03-18 144845" src="https://github.com/user-attachments/assets/c51ddb1a-759a-4ab8-8e2c-fa845ddd45d6" />
-
-<img width="1901" height="1010" alt="Screenshot 2026-03-18 144917" src="https://github.com/user-attachments/assets/f9f8a653-80b5-4f62-90d6-5aac4edab89c" />
-
-
-
-
 ## Impact Model
 
 | Metric | Before MeetFlow | After MeetFlow | Savings |
