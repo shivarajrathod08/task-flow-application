@@ -1,0 +1,126 @@
+{
+  "info": {
+    "name": "MeetFlow API",
+    "description": "Agentic AI for Autonomous Enterprise Workflows",
+    "_postman_id": "meetflow-hackathon-2025",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:8080" }
+  ],
+  "item": [
+    {
+      "name": "1. Process Meeting Transcript",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/api/meetings/process",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Q2 Sprint Planning\",\n  \"meetingDate\": \"2025-03-17 10:00\",\n  \"transcript\": \"Attendees: Sarah (Design), John (DevOps), Priya (PM)\\n\\nPriya: Key decisions today - mobile app is Q2 priority, $50K cloud budget approved.\\n\\nSarah will design mobile UI mockups by April 15. HIGH priority.\\n\\nJohn needs to set up AWS infrastructure ASAP by April 10. This is CRITICAL and blocking everything.\\n\\nPriya will write the product requirements document by April 5. HIGH priority.\\n\\nWe agreed to do weekly syncs every Monday at 10 AM.\"\n}"
+        }
+      }
+    },
+    {
+      "name": "2. Get All Meetings",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/meetings"
+      }
+    },
+    {
+      "name": "3. Get Meeting by ID",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/meetings/1"
+      }
+    },
+    {
+      "name": "4. Get All Tasks",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tasks"
+      }
+    },
+    {
+      "name": "5. Get Tasks for Meeting",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tasks/meeting/1"
+      }
+    },
+    {
+      "name": "6. Get Tasks by Assignee",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tasks/assignee/sarah@company.com"
+      }
+    },
+    {
+      "name": "7. Update Task Status (Mark In Progress)",
+      "request": {
+        "method": "PATCH",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/api/tasks/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"IN_PROGRESS\"\n}"
+        }
+      }
+    },
+    {
+      "name": "8. Update Task Status (Mark Complete)",
+      "request": {
+        "method": "PATCH",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/api/tasks/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"COMPLETED\"\n}"
+        }
+      }
+    },
+    {
+      "name": "9. Get Dashboard Summary",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tasks/dashboard"
+      }
+    },
+    {
+      "name": "10. Get Overdue Tasks",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tasks/overdue"
+      }
+    },
+    {
+      "name": "11. Trigger Reminders Manually",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/tasks/trigger/reminders"
+      }
+    },
+    {
+      "name": "12. Trigger Escalation Manually",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/api/tasks/trigger/escalation"
+      }
+    },
+    {
+      "name": "13. Swagger UI (Open in Browser)",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/swagger-ui.html"
+      }
+    },
+    {
+      "name": "14. H2 Console (Open in Browser)",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/h2-console"
+      }
+    }
+  ]
+}
