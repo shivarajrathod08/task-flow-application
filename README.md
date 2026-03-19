@@ -5,7 +5,7 @@
 After every meeting, someone manually reads through notes, extracts action items, emails people, and hopes tasks get done. This is slow, error-prone, and creates accountability gaps.
 
 ## The Solution
-MeetFlow deploys **4 specialized AI agents** that work together to automate the entire meeting-to-execution pipeline:
+TaskFlow deploys **4 specialized AI agents** that work together to automate the entire meeting-to-execution pipeline:
 
 ```
 Meeting Transcript
@@ -56,7 +56,7 @@ Meeting Transcript
 |-------|-----------|
 | Backend | Java 17, Spring Boot 3.2 |
 | Database | MySQL 8 (H2 for dev/demo) |
-| AI | Google Gemini 1.5 Flash / OpenAI GPT-4o-mini |
+| AI | Google Gemini 2.5 Flash / OpenAI GPT-4o-mini |
 | HTTP Client | Spring WebFlux (WebClient) |
 | Scheduler | Spring @Scheduled |
 | Email | Spring Mail (SMTP) |
@@ -73,8 +73,8 @@ Meeting Transcript
 
 ### Run in Demo Mode (No API key needed)
 ```bash
-git clone https://github.com/yourname/meetflow.git
-cd meetflow
+git clone https://github.com/yourname/taskflowai.git
+cd taskflowai
 mvn spring-boot:run
 ```
 
@@ -88,7 +88,7 @@ Open: http://localhost:8080/swagger-ui.html
 ### Run with Real AI (Gemini)
 ```bash
 export GEMINI_API_KEY=your_key_here
-# In application.yml: set ai.provider=gemini and meetflow.demo-mode=false
+# In application.yml: set ai.provider=gemini and taskflowai.demo-mode=false
 mvn spring-boot:run
 ```
 
