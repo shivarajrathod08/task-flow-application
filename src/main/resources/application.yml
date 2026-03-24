@@ -18,3 +18,11 @@ ai:
 
 meetflow:
   demo-mode: false
+  escalation:
+    delay-threshold-hours: 24
+  health:
+    overdue-threshold-hours: 24
+    overload-task-limit: 5
+  self-healing:
+    default-deadline-days: 3
+    default-assignee: team@company.com
