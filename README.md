@@ -362,7 +362,7 @@ curl -X POST http://localhost:8080/api/meetings/process \
 ### 1. Swagger UI — API Request
 The POST `/api/meetings/process` endpoint with a sample meeting transcript.
 
-![Swagger Request]([docs/screenshots/swagger_api_request.png](https://github.com/shivarajrathod08/task-flow-application/blob/main/swagger%20api%20request.png?raw=true))
+![Swagger Request]([docs/screenshots/swagger_api_request.png](https://github.com/shivarajrathod08/task-flow-application/blob/main/swagger%20api%20request.png))
 
 ### 2. API Response — 201 Created
 Full JSON response showing `meetingId: 13`, `tasksExtracted: 2`, both tasks assigned with deadlines.
