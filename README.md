@@ -377,8 +377,6 @@ Full JSON response showing `meetingId: 13`, `tasksExtracted: 2`, both tasks assi
 
 ### 3. Application Logs — Agents in Action
 Real logs showing `PlanningAssignmentAgent`, `NotificationAgent`, `AuditService`, and the self-healing fallback.
-
-![Logs](https://github.com/shivarajrathod08/task-flow-application/blob/main/log.png)
 ![Logs](https://github.com/shivarajrathod08/task-flow-application/blob/main/logs.png?raw=true)
 
 **Key events visible:**
@@ -404,7 +402,7 @@ Real logs showing `PlanningAssignmentAgent`, `NotificationAgent`, `AuditService`
 ### 7. Workflow Logs — Full Pipeline
 Complete application logs showing the 5-step pipeline executing from transcript input to task creation.
 
-![Workflow Logs](docs/screenshots/Screenshot_2026-03-24_105258.png)
+![Workflow Logs](https://github.com/shivarajrathod08/task-flow-application/blob/main/log.png)
 
 ---
 
