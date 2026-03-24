@@ -367,7 +367,7 @@ The POST `/api/meetings/process` endpoint with a sample meeting transcript.
 ### 2. API Response — 201 Created
 Full JSON response showing `meetingId: 13`, `tasksExtracted: 2`, both tasks assigned with deadlines.
 
-![API Response](docs/screenshots/api_response.png)
+![API Response](https://github.com/shivarajrathod08/task-flow-application/blob/main/api%20response.png)
 
 **Key fields to note:**
 - `tasksExtracted: 2` — Gemini AI found 2 tasks
