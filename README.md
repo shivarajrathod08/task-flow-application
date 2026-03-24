@@ -1,6 +1,6 @@
 # TaskFlow AI — Agentic AI Workflow System
 
-> **Final Year Project | 2025–2026**  
+> **GENAI HACKATHON 2026**  
 > An autonomous, multi-agent AI system that converts meeting transcripts into structured, assigned, tracked, and escalated tasks — with zero manual effort.
 
 ---
