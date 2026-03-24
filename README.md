@@ -378,7 +378,8 @@ Full JSON response showing `meetingId: 13`, `tasksExtracted: 2`, both tasks assi
 ### 3. Application Logs — Agents in Action
 Real logs showing `PlanningAssignmentAgent`, `NotificationAgent`, `AuditService`, and the self-healing fallback.
 
-![Logs](docs/screenshots/logs.png)
+![Logs](https://github.com/shivarajrathod08/task-flow-application/blob/main/log.png)
+![Logs](https://github.com/shivarajrathod08/task-flow-application/blob/main/logs.png?raw=true)
 
 **Key events visible:**
 - `FALLBACK_USED` — deadline was missing, auto-assigned +3 days
@@ -388,17 +389,17 @@ Real logs showing `PlanningAssignmentAgent`, `NotificationAgent`, `AuditService`
 ### 4. MySQL — meetings table
 10 meetings processed and stored with timestamps.
 
-![Meetings Table](docs/screenshots/meeting_table.png)
+![Meetings Table](https://github.com/shivarajrathod08/task-flow-application/blob/main/meeting_table.png)
 
 ### 5. MySQL — tasks table
 43 tasks showing real `ESCALATED`, `PENDING`, and `COMPLETED` statuses.
 
-![Tasks Table](docs/screenshots/tasks_table.png)
+![Tasks Table](https://github.com/shivarajrathod08/task-flow-application/blob/main/tasks_table.png)
 
 ### 6. MySQL — audit_logs table
 43 events logged: `NOTIFICATION_SENT`, `FALLBACK_USED`, escalations — all with timestamps.
 
-![Audit Logs](docs/screenshots/escalation.png)
+![Audit Logs](https://github.com/shivarajrathod08/task-flow-application/blob/main/escalation.png)
 
 ### 7. Workflow Logs — Full Pipeline
 Complete application logs showing the 5-step pipeline executing from transcript input to task creation.
