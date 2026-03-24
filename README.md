@@ -451,7 +451,7 @@ taskflow-ai/
 ├── pom.xml
 ├── src/main/
 │   ├── java/taskflowai/
-│   │   ├── MeetFlowApplication.java
+│   │   ├── TaskFlowApplication.java
 │   │   ├── agent/
 │   │   │   ├── TaskExtractionAgent.java      ← Agent 1: AI extraction
 │   │   │   ├── PlanningAssignmentAgent.java  ← Agent 2: Planning + self-healing
@@ -485,12 +485,11 @@ taskflow-ai/
 │   └── resources/
 │       └── application.yml
 └── docs/
-    ├── schema.sql
-    └── screenshots/
+    ├── TaskFlowAI.postman_collection.json
 ```
 
 ---
 
 ## License
 
-MIT — Built as a Final Year Engineering Project, 2025–2026.
+MIT — GENAI HACKATHON 2026.
