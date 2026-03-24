@@ -413,7 +413,7 @@ Complete application logs showing the 5-step pipeline executing from transcript 
 |-------|-----------|---------|
 | Language | Java | 17 LTS |
 | Framework | Spring Boot | 3.2 |
-| AI Engine | Google Gemini | 1.5 Flash |
+| AI Engine | Google Gemini | 2.5 Flash |
 | Database | MySQL / H2 | 8.0 / In-memory |
 | HTTP Client | Spring WebFlux | 3.2 |
 | Scheduling | Spring `@Scheduled` | Built-in |
@@ -451,7 +451,7 @@ Complete application logs showing the 5-step pipeline executing from transcript 
 taskflow-ai/
 ├── pom.xml
 ├── src/main/
-│   ├── java/com/meetflow/
+│   ├── java/taskflowai/
 │   │   ├── MeetFlowApplication.java
 │   │   ├── agent/
 │   │   │   ├── TaskExtractionAgent.java      ← Agent 1: AI extraction
